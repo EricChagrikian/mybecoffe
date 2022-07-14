@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-9w=ezcw0tu_=n1ie9q^i7^d%q72=bye4#@12u68v+!451(c38q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mybecofferic.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -150,3 +150,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home/'
+
