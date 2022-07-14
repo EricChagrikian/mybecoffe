@@ -16,7 +16,7 @@ def index(request):
 				form.save()
 				return redirect('talkplanner')
 			else:
-				messages.error("Please select yourself as the user")
+				messages.error(request, "Please select yourself as the user")
 				return redirect('talkplanner')
 	form = TalkForm()
 
@@ -35,6 +35,6 @@ def remove(request, item_id):
 			item.delete()
 			return redirect('talkplanner')
 	else: 
-		messages.error("The post you tried to delete isnt yours")
+		messages.error(request, "The post you tried to delete isnt yours")
 		return redirect('talkplanner')
 	return render(request,'talkplanner.html')
